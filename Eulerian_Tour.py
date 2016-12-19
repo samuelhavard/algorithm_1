@@ -12,7 +12,6 @@ def edge(x, y):
 
 
 def create_tour(nodes):
-    # your code here
     tour = []
     l = len(nodes)
     for i in range(l):
