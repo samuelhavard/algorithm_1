@@ -4,13 +4,13 @@ def russian(a, b):
     z = 0
     while x > 0:
         if x % 2 == 1:
-            z = z + y
+            z += y
         y <<= 1
         x >>= 1
     return z
 
 
-#print russian(20, 7)
+print russian(20, 7)
 
 
 def russian_rec(a, b):
@@ -19,4 +19,4 @@ def russian_rec(a, b):
     if a % 2 == 0:
         return 2 * russian_rec(a / 2, b)
     return b + 2 * russian_rec((a - 1) / 2, b)
-print russian_rec(20, 7)
+#print russian_rec(20, 7)
