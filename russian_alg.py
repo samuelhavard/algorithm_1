@@ -19,4 +19,4 @@ def russian_rec(a, b):
     if a % 2 == 0:
         return 2 * russian_rec(a / 2, b)
     return b + 2 * russian_rec((a - 1) / 2, b)
-#print russian_rec(20, 7)
+print russian_rec(20, 7)
